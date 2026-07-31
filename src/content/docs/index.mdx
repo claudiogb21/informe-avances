@@ -1,0 +1,66 @@
+---
+title: Informe de avances
+description: Estado del proyecto, trabajo entregado y próximos pasos. Período abril – julio 2026.
+template: splash
+hero:
+  tagline: Estado del proyecto, trabajo entregado y próximos pasos. Período abril – julio 2026.
+  actions:
+    - text: Ver el resumen
+      link: estado/resumen/
+      icon: right-arrow
+      variant: primary
+    - text: Qué se entregó
+      link: entregado/modulos/
+      icon: document
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+export const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+
+## En una línea
+
+**Todo lo desarrollado está publicado y en uso.** No hay trabajo terminado esperando salir.
+
+<CardGrid>
+	<Card title="Dos módulos nuevos" icon="star">
+		**Medición de Pozos** y **Notificaciones** se construyeron completos en este período, de cero
+		hasta estar disponibles para los equipos de campo.
+	</Card>
+	<Card title="Más de 100 tareas cerradas" icon="approve-check">
+		Entre funcionalidades nuevas, mejoras y correcciones reportadas por los usuarios.
+	</Card>
+	<Card title="Publicación automática" icon="rocket">
+		Las nuevas versiones se publican solas, sin pasos manuales que puedan fallar.
+	</Card>
+	<Card title="Red de pruebas automáticas" icon="setting">
+		245 pruebas que se ejecutan antes de cada publicación y detienen los errores antes de que
+		lleguen al usuario.
+	</Card>
+</CardGrid>
+
+## Cómo leer este informe
+
+<CardGrid stagger>
+	<Card title="Estado actual" icon="information">
+		Dónde está el proyecto hoy y qué significa en la práctica.
+
+		<a href={`${base}estado/resumen/`}>Ver estado actual</a>
+	</Card>
+	<Card title="Lo que se entregó" icon="open-book">
+		El trabajo terminado, ordenado por módulo de la aplicación.
+
+		<a href={`${base}entregado/modulos/`}>Ver lo entregado</a>
+	</Card>
+	<Card title="Trabajo en curso" icon="pencil">
+		Lo que está empezado y todavía no llegó a los usuarios.
+
+		<a href={`${base}en-curso/`}>Ver trabajo en curso</a>
+	</Card>
+	<Card title="Próximos pasos" icon="right-arrow">
+		Hacia dónde sigue el trabajo y por qué en ese orden.
+
+		<a href={`${base}proximos-pasos/`}>Ver próximos pasos</a>
+	</Card>
+</CardGrid>
