@@ -136,9 +136,8 @@ necesidad de publicar una versión nueva para cambiar quién accede a qué.
 - **Panel de administración** ampliado: puntos de medición y macollas, maquinaria y combustible,
   sistemas de tratamiento, búsqueda de pozos y tanques, y cargas masivas de datos.
 - **Migración de usuarios y roles** a la estructura multi-empresa.
-- Reemplazo de los tableros anteriores por **tableros de Metabase**, incluidos los de producción de
-  pozos y los de cada operadora.
-- **Servicio de envío de correo**.
+- Reemplazo de los tableros anteriores por **tableros de desarrollo propio**, incluidos los de
+  producción de pozos y los de cada operadora.
 - Corrección de la **firma del instalador de Android**, que impedía instalar la aplicación en
   algunos dispositivos.
 - **Actualización de módulos sin reinstalar la aplicación**: cuando se publica una mejora, los
